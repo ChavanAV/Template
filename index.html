@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		.main-div{
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			z-index: -1;
+		}
+		.nav{
+			background-color: lightsteelblue;
+			background-image: linear-gradient(to right, blue, lightsteelblue);
+			width: 100%;
+			height: 50px;
+			z-index: +1;
+			position: fixed;
+		}
+		.list{
+			display: flex;
+			flex-direction: row;
+			justify-content: right;
+			padding: 10px 10px;
+			margin-top: 10px;
+		}
+		.list li{
+			margin-left: 50px;
+			list-style-type: none;
+			cursor: pointer;
+            color: white;
+            font-size: 20px;
+		}
+        .list li:hover{
+            cursor: pointer;
+        }
+		.cnt-div{
+			background-image: linear-gradient(to right, blue, lightsteelblue);
+			margin-top: 50px;
+			height: 60%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.cnt-div1{
+			width: 50%;
+			height: 100%;
+			padding: 50px 0px 0px 100px;
+		}
+		.cnt-div1 h1{
+			color: white;
+			font-size: 40px;
+		}
+		.cnt-div1 p{
+			color: white;
+			margin-top: 20px	;
+		}
+		.cnt-div2{
+			width: 50%;
+			padding-top: 20px;
+			height: 100%;
+		}
+		button{
+			border-radius: 20px;
+			border: none;
+			margin-right: 20px;
+			margin-top: 50px;
+			height: 50px;
+			width: 150px;
+			background-color: hotpink;
+		}
+        i{
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .grid-div{
+            height: 600px;
+            width: 100%;
+            display: flex;
+        }
+        .gr-div1{
+            height: 100%;
+            width: 35%;
+			padding: 180px 30px 100px 100px;        
+        }
+        .gr-div2{
+            height: 100%;
+            width: 65%;
+        }
+        .card{
+            width: 200px;
+            height: 230px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .r1{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+	</style>
+</head>
+<body>
+	<div class="main-div">
+		<div class="nav">
+			<ul class="list">
+				<li>Home</li>
+				<li>About</li>
+				<li>Servises</li>
+				<li>Clock</li>
+				<li>Contact us</li>
+			</ul>
+		</div>	
+		<div class="cnt-div">
+			<div class="cnt-div1">
+				<h1>Boost Personal <br>Productivity</h1>
+				<p>lets grow more with togather</p>
+				<button type="button">Explore more</button>
+				<button type="button">Explore more</button><br>
+                <div class="icon-row">
+                    <i class="fa fa-phone" style="font-size:20px;color:white"></i>
+                    <i class="fa fa-envelope" style="font-size:20px;color:white"></i>
+                    <i class="fa fa-map-marker" style="font-size:20px;color:white"></i>
+                    <i class="fa fa-phone" style="font-size:20px;color:white"></i>
+                </div>
+			</div>
+			<div class="cnt-div2">
+				<img width="100%" height="100%" src="https://yomarting.com/wp-content/uploads/2021/10/About-us-svg.svg">
+			</div>
+		</div>
+        <div class="grid-div">
+            <div class="gr-div1">
+                <h1>We provide A Lot of Cool Services</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maiores dolore magni in provident repudiandae alias tenetur. Nam beatae, ratione nemo ut nesciunt velit iste, eos, fugiat temporibus fuga tenetur!</p>
+				<button type="button">Explore more</button>
+            </div>
+            <div class="gr-div2">
+                <div class="r1">
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>React</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>Java</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>HTML</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                </div>
+                <div class="r1">
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>CSS</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>Web-Services</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                    <div align = "center"class="card">
+                        <img width="60px" height="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <h4>Flutter</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis soluta et quasi rem voluptate molestiae cum sapiente minima nisi, aperiam veniam accusamus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	
+</body>
+</html>
